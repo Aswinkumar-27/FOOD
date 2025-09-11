@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>V.N.R Live Fish Marketing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #5682B1 0%, #739EC9 33%, #FFE8DB 66%, #000000 100%);
+            color: #222;
+            min-height: 100vh;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        header {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000000;
+            margin: 24px 0 16px 0;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .welcome-text {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px 0 30px 0;
+            color: #000000;
+            font-weight: 600;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            padding: 32px 16px 16px 16px;
+        }
+
+        .column {
+            background: rgba(255, 232, 219, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(86, 130, 177, 0.1);
+            padding: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(115, 158, 201, 0.2);
+        }
+
+        .column img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .fish-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #5682B1;
+            margin: 10px 0 5px 0;
+        }
+
+        .fish-cost {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            margin: 5px 0;
+        }
+
+        .benefits-title {
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 5px 0;
+        }
+
+        .benefit-item {
+            margin: 3px 0;
+            color: #555;
+        }
+
+        .english-name {
+            font-style: italic;
+            color: #666;
+            margin: 8px 0;
+        }
+
+        .banned-text {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            background: #ff8787;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            background: #5682B1;
+            color: #fff;
+            font-size: 1rem;
+            padding: 12px 0;
+            letter-spacing: 0.8px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            main {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                padding: 20px 12px;
+            }
+            header {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            main {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                padding: 16px 8px;
+            }
+            
+            header {
+                font-size: 1.8rem;
+                margin: 16px 0 8px 0;
+            }
+            
+            .welcome-text {
+                font-size: 1rem;
+                margin: 15px 0 20px 0;
+            }
+            
+            .column {
+                padding: 12px;
+            }
+            
+            .column img {
+                height: 180px;
+            }
+            
+            footer {
+                font-size: 0.9rem;
+                padding: 10px 0;
+            }
+            
+            .contact-info {
+                margin: 20px 8px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="jump.gif" alt="Banner" class="banner-img">
+    
+    <header>V.N.R Live Fish</header>
+    
+    <p class="welcome-text">Hi Everyone! Welcome to V.N.R Live Fishes 🐟🐟</p>
+    
+    <main>
+        <!-- Fish 1: Fungus -->
+        <div class="column">
+            <img src="fungus.jpg" alt="Fungus Fish">
+            <p class="fish-name">Fish Name: Fungus</p>
+            <p class="fish-cost">Cost: ₹90/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Vitamins</p>
+            <p class="benefit-item">• Minerals</p>
+            <p class="benefit-item">• Antioxidants</p>
+            <p class="benefit-item">• Immune boosting</p>
+            <p>Fish Born: Old / New</p>
+            <p>Condition: Good / Not good</p>
+        </div>
+
+        <!-- Fish 2: Korameenu -->
+        <div class="column">
+            <img src="korameenu.jpg" alt="Korameenu Fish">
+            <p class="fish-name">Fish Name: Korameenu</p>
+            <p class="fish-cost">Cost: ₹360/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Vitamins</p>
+            <p class="benefit-item">• Minerals</p>
+            <p class="benefit-item">• Omega-3 fatty acids</p>
+            <p class="benefit-item">• Supporting heart health</p>
+            <p class="benefit-item">• Brain function</p>
+            <p class="benefit-item">• Muscle growth</p>
+            <p>Fish Born: Old / New</p>
+            <p class="english-name">English Name: Murrel Fish / Snakehead Fish</p>
+        </div>
+
+        <!-- Fish 3: China Guraka -->
+        <div class="column">
+            <img src="china guraka.jpg" alt="China Guraka Fish">
+            <p class="fish-name">Fish Name: China Guraka</p>
+            <p class="fish-cost">Cost: 2 Pieces - ₹40/-</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Vitamins</p>
+            <p class="benefit-item">• Minerals</p>
+            <p class="benefit-item">• Omega-3 fatty acids</p>
+            <p class="benefit-item">• Supporting heart health</p>
+            <p class="benefit-item">• Brain function</p>
+            <p class="benefit-item">• Overall well-being</p>
+        </div>
+
+        <!-- Fish 4: Rupchanda -->
+        <div class="column">
+            <img src="rupchanda.jpeg" alt="Rupchanda Fish">
+            <p class="fish-name">Fish Name: Rupchanda</p>
+            <p class="fish-cost">Cost: ₹100/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Omega-3 fatty acids</p>
+            <p class="benefit-item">• Overall well-being</p>
+            <p class="benefit-item">• Vitamin D</p>
+            <p class="english-name">English Name: Chinese Pomfret</p>
+        </div>
+
+        <!-- Fish 5: Mosu -->
+        <div class="column">
+            <img src="mosu .jpg" alt="Mosu Fish">
+            <p class="fish-name">Fish Name: Mosu</p>
+            <p class="fish-cost">Cost: ₹70/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Vitamins</p>
+            <p class="benefit-item">• Minerals</p>
+            <p class="benefit-item">• Omega-3 fatty acids</p>
+            <p class="benefit-item">• Supporting heart health</p>
+            <p class="benefit-item">• Brain function</p>
+            <p class="benefit-item">• Overall well-being</p>
+        </div>
+
+        <!-- Fish 6: Catfish -->
+        <div class="column">
+            <img src="cat.jpg" alt="Catfish">
+            <p class="fish-name">Fish Name: Catfish</p>
+            <p class="banned-text">Banned in India 🚫</p>
+        </div>
+
+        <!-- Fish 7: Devil Fish -->
+        <div class="column">
+            <img src="devil .jpg" alt="Devil Fish">
+            <p class="fish-name">Fish Name: Devil Fish</p>
+            <p class="banned-text">Waste of aquatic culture</p>
+        </div>
+
+        <!-- Fish 8: Natu -->
+        <div class="column">
+            <img src="natu .jpg" alt="Natu Fish">
+            <p class="fish-name">Fish Name: Natu</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Weight management</p>
+            <p class="benefit-item">• Lower cholesterol</p>
+            <p class="benefit-item">• Improve digestion</p>
+        </div>
+
+        <!-- Fish 9: Calta -->
+        <div class="column">
+            <img src="calta.jpg" alt="Calta Fish">
+            <p class="fish-name">Fish Name: Calta</p>
+            <p class="fish-cost">Cost: ₹120/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Vitamins</p>
+            <p class="benefit-item">• Minerals</p>
+            <p class="english-name">English Name: Indian Major Carp</p>
+        </div>
+
+        <!-- Fish 10: Sheelavathi -->
+        <div class="column">
+            <img src="sheelavathi.jpg" alt="Sheelavathi Fish">
+            <p class="fish-name">Fish Name: Sheelavathi</p>
+            <p class="fish-cost">Cost: ₹100/- per kg</p>
+            <p class="benefits-title">Benefits:</p>
+            <p class="benefit-item">• Proteins</p>
+            <p class="benefit-item">• Omega-3 fatty acids</p>
+            <p class="benefit-item">• Supporting heart health</p>
+            <p class="benefit-item">• Brain function</p>
+            <p class="benefit-item">• Reducing inflammation</p>
+            <p class="english-name">English Name: Labeo Rohita</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>📝 Note:</strong> All fishes are grown up with good food</p>
+            <p><strong>📞 Contact us:</strong> 000000000</p>
+            <p><strong>💬 WhatsApp:</strong> 11111111111</p>
+        </div>
+    </main>
+
+    <footer>
+        <div>📧 vnrlivefish@gmail.com</div>
+        <div>📞 Call: 00000000000</div>
+    </footer>
+</body>
+</html>
